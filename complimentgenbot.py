@@ -24,7 +24,7 @@ def get_keyboard() -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Другой", callback_data=COMPLIMENT_COMMAND)
+                InlineKeyboardButton("Другой комплимент", callback_data=COMPLIMENT_COMMAND)
             ]
         ]
     )
