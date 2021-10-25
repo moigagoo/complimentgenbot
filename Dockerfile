@@ -4,7 +4,7 @@ RUN curl -OsSL https://raw.githubusercontent.com/python-poetry/poetry/master/ins
 RUN python install-poetry.py --preview -y
 
 WORKDIR /usr/src/app
-COPY poetry.lock pyproject.toml README.md .env /usr/src/app/
+COPY poetry.lock pyproject.toml README.md /usr/src/app/
 
 RUN /root/.local/bin/poetry install
 
